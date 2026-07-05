@@ -1,0 +1,72 @@
+[
+ {
+  "sym": "JD10",
+  "n": 250000,
+  "pip": 2,
+  "jump_thr_pips": 1022.994,
+  "jumps_per_hour": 7.6464798217893595,
+  "tick_interval_s": 1.0,
+  "sigma_med": 171.23384275588512,
+  "sigma_p10": 167.73390080302556,
+  "sigma_p90": 174.55235164404348,
+  "frac_ticks_signal": 0.0,
+  "mean_ev_when_signal": 0.0,
+  "daily_ev_proxy_per_dollar": 0.0
+ },
+ {
+  "sym": "JD25",
+  "n": 250000,
+  "pip": 2,
+  "jump_thr_pips": 3060.0864,
+  "jumps_per_hour": 9.884473915971611,
+  "tick_interval_s": 1.0,
+  "sigma_med": 510.0665112063342,
+  "sigma_p10": 498.17896373789483,
+  "sigma_p90": 522.8989878568025,
+  "frac_ticks_signal": 0.0,
+  "mean_ev_when_signal": 0.0,
+  "daily_ev_proxy_per_dollar": 0.0
+ },
+ {
+  "sym": "JD50",
+  "n": 250000,
+  "pip": 2,
+  "jump_thr_pips": 3985.2288,
+  "jumps_per_hour": 8.439212029374053,
+  "tick_interval_s": 1.0,
+  "sigma_med": 665.9541579985485,
+  "sigma_p10": 651.3175815974424,
+  "sigma_p90": 683.3952380502977,
+  "frac_ticks_signal": 0.0,
+  "mean_ev_when_signal": 0.0,
+  "daily_ev_proxy_per_dollar": 0.0
+ },
+ {
+  "sym": "JD75",
+  "n": 250000,
+  "pip": 2,
+  "jump_thr_pips": 613.7964,
+  "jumps_per_hour": 8.205978345334923,
+  "tick_interval_s": 1.0,
+  "sigma_med": 101.42914819697941,
+  "sigma_p10": 97.74539535137077,
+  "sigma_p90": 105.98451971674072,
+  "frac_ticks_signal": 0.0,
+  "mean_ev_when_signal": 0.0,
+  "daily_ev_proxy_per_dollar": 0.0
+ },
+ {
+  "sym": "JD100",
+  "n": 250000,
+  "pip": 2,
+  "jump_thr_pips": 26.686799999999998,
+  "jumps_per_hour": 8.625602237994094,
+  "tick_interval_s": 1.0,
+  "sigma_med": 4.423395278754401,
+  "sigma_p10": 4.225442407050106,
+  "sigma_p90": 4.560372425905459,
+  "frac_ticks_signal": 0.07906124093473006,
+  "mean_ev_when_signal": 0.013653010806964842,
+  "daily_ev_proxy_per_dollar": 93.26223160363475
+ }
+]

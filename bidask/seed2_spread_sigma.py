@@ -62,7 +62,11 @@ if __name__ == "__main__":
         if r:
             res.append(r)
             l0 = r["lags"][0]
-            best = max((v["r"], k) for k, v in r["lags"].items() if v["r"] is not None)
+            cands = [(v["r"], k) for k, v in r["lags"].items() if v["r"] is not None]
+            if not cands:
+                print(f"{s:9s} n={r['n']:6d} spread residual has zero variance -> Seed 2 undefined")
+                continue
+            best = max(cands)
             print(f"{s:9s} n={r['n']:6d} r(lag0)={l0['r']:+.4f} "
                   f"best lag={best[1]:+4d} r={best[0]:+.4f}")
     json.dump(res, open("results/seed2_spread_sigma.json", "w"), indent=1)

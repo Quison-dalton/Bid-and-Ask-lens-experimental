@@ -61,7 +61,7 @@ def analyze(sym, gate=0.01):
                 sigma_med=float(np.nanmedian(sig)), sigma_p10=float(np.nanpercentile(sig, 10)),
                 sigma_p90=float(np.nanpercentile(sig, 90)),
                 frac_ticks_signal=frac_signal, mean_ev_when_signal=mean_ev_when_signal,
-                daily_ev_proxy_per_$1=daily_ev_proxy)
+                daily_ev_proxy_per_dollar=daily_ev_proxy)
 
 if __name__ == "__main__":
     res = []
@@ -72,7 +72,7 @@ if __name__ == "__main__":
             print(sym, "no history"); continue
         res.append(r)
         print(f"{sym:6s} n={r['n']} thr={r['jump_thr_pips']:.0f}p jumps/h={r['jumps_per_hour']:.1f} "
-              f"σ med={r['sigma_med']:.2f} [{r['sigma_p10']:.2f}..{r['sigma_p90']:.2f}] "
-              f"signal%={r['frac_ticks_signal']*100:.1f} evWhen={r['mean_ev_when_signal']*100:+.2f}% "
-              f"dailyEVproxy=${r['daily_ev_proxy_per_$1']:.1f}/[$1 stakes]")
+              f"sig med={r['sigma_med']:.2f} [{r['sigma_p10']:.2f}..{r['sigma_p90']:.2f}] "
+              f"signal_pct={r['frac_ticks_signal']*100:.1f} evWhen={r['mean_ev_when_signal']*100:+.2f}pct "
+              f"dailyEVproxy=${r['daily_ev_proxy_per_dollar']:.1f}/day at $1 stakes")
     json.dump(res, open("results/jd_duty_cycle.json", "w"), indent=1)
