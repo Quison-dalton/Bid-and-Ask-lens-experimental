@@ -476,198 +476,209 @@
   "instrument": "CRASH500",
   "seed": 3,
   "hypothesis": "pre-spike spread widening (window 30)",
-  "stat": "pre=0.0195p vs base=0.0000p",
-  "n": 21,
+  "stat": "pre=0.0074p vs base=0.0000p",
+  "n": 41,
   "t": null,
-  "p": 0.23438280859570215,
+  "p": 0.56071964017991,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:48"
+  "ts": "2026-07-05 21:32:36"
  },
  {
   "instrument": "CRASH500",
   "seed": 3,
   "hypothesis": "pre-spike |skew| elevation (window 30)",
-  "stat": "pre=0.3651p vs base=0.3800p",
-  "n": 21,
+  "stat": "pre=0.3589p vs base=0.3699p",
+  "n": 41,
   "t": null,
-  "p": 0.9325337331334332,
+  "p": 0.9335332333833083,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:48"
+  "ts": "2026-07-05 21:32:36"
  },
  {
   "instrument": "CRASH1000",
   "seed": 3,
   "hypothesis": "pre-spike spread widening (window 30)",
-  "stat": "pre=-0.0119p vs base=-0.0000p",
-  "n": 5,
+  "stat": "pre=0.0024p vs base=0.0000p",
+  "n": 18,
   "t": null,
-  "p": 0.7376311844077961,
+  "p": 0.9005497251374313,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:48"
+  "ts": "2026-07-05 21:32:36"
  },
  {
   "instrument": "CRASH1000",
   "seed": 3,
   "hypothesis": "pre-spike |skew| elevation (window 30)",
-  "stat": "pre=0.1967p vs base=0.2047p",
-  "n": 5,
+  "stat": "pre=0.1454p vs base=0.1644p",
+  "n": 18,
   "t": null,
-  "p": 0.6391804097951025,
+  "p": 0.8995502248875562,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:48"
+  "ts": "2026-07-05 21:32:36"
  },
  {
   "instrument": "BOOM500",
   "seed": 3,
   "hypothesis": "pre-spike spread widening (window 30)",
-  "stat": "pre=0.0041p vs base=0.0000p",
-  "n": 14,
+  "stat": "pre=-0.0045p vs base=-0.0000p",
+  "n": 34,
   "t": null,
-  "p": 0.768615692153923,
+  "p": 0.6061969015492253,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:50"
+  "ts": "2026-07-05 21:32:37"
  },
  {
   "instrument": "BOOM500",
   "seed": 3,
   "hypothesis": "pre-spike |skew| elevation (window 30)",
-  "stat": "pre=0.4464p vs base=0.4526p",
-  "n": 14,
+  "stat": "pre=0.4500p vs base=0.4506p",
+  "n": 34,
   "t": null,
-  "p": 0.7381309345327336,
+  "p": 0.5592203898050975,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:50"
+  "ts": "2026-07-05 21:32:37"
  },
  {
   "instrument": "BOOM1000",
   "seed": 3,
   "hypothesis": "pre-spike spread widening (window 30)",
-  "stat": "pre=-0.0435p vs base=0.0000p",
-  "n": 8,
+  "stat": "pre=-0.0264p vs base=0.0000p",
+  "n": 17,
   "t": null,
-  "p": 0.06746626686656672,
+  "p": 0.09345327336331834,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:50"
+  "ts": "2026-07-05 21:32:38"
  },
  {
   "instrument": "BOOM1000",
   "seed": 3,
   "hypothesis": "pre-spike |skew| elevation (window 30)",
-  "stat": "pre=0.4437p vs base=0.4013p",
-  "n": 8,
+  "stat": "pre=0.4500p vs base=0.4150p",
+  "n": 17,
   "t": null,
-  "p": 0.04247876061969016,
+  "p": 0.010994502748625687,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:50"
+  "ts": "2026-07-05 21:32:38"
  },
  {
   "instrument": "JD10",
   "seed": 3,
   "hypothesis": "pre-spike spread widening (window 30)",
-  "stat": "pre=0.0275p vs base=-0.0001p",
-  "n": 7,
+  "stat": "pre=0.0076p vs base=-0.0000p",
+  "n": 12,
   "t": null,
-  "p": 0.28085957021489255,
+  "p": 0.6926536731634183,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:50"
+  "ts": "2026-07-05 21:32:39"
  },
  {
   "instrument": "JD10",
   "seed": 3,
   "hypothesis": "pre-spike |skew| elevation (window 30)",
-  "stat": "pre=0.4452p vs base=0.4152p",
-  "n": 7,
+  "stat": "pre=0.4097p vs base=0.4027p",
+  "n": 12,
   "t": null,
-  "p": 0.06346826586706647,
+  "p": 0.41879060469765117,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:50"
+  "ts": "2026-07-05 21:32:39"
  },
  {
   "instrument": "JD25",
   "seed": 3,
   "hypothesis": "pre-spike spread widening (window 30)",
-  "stat": "pre=0.0284p vs base=-0.0000p",
-  "n": 7,
+  "stat": "pre=0.0166p vs base=-0.0000p",
+  "n": 24,
   "t": null,
-  "p": 0.31984007996002,
+  "p": 0.25537231384307846,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:51"
+  "ts": "2026-07-05 21:32:39"
  },
  {
   "instrument": "JD25",
   "seed": 3,
   "hypothesis": "pre-spike |skew| elevation (window 30)",
-  "stat": "pre=0.2833p vs base=0.2730p",
-  "n": 7,
+  "stat": "pre=0.2507p vs base=0.2531p",
+  "n": 24,
   "t": null,
-  "p": 0.4362818590704648,
+  "p": 0.5347326336831584,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:51"
+  "ts": "2026-07-05 21:32:39"
  },
  {
   "instrument": "JD50",
   "seed": 3,
   "hypothesis": "pre-spike spread widening (window 30)",
-  "stat": "pre=-0.0213p vs base=0.0000p",
-  "n": 6,
+  "stat": "pre=0.0060p vs base=0.0000p",
+  "n": 15,
   "t": null,
-  "p": 0.495752123938031,
+  "p": 0.7311344327836082,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:51"
+  "ts": "2026-07-05 21:32:40"
  },
  {
   "instrument": "JD50",
   "seed": 3,
   "hypothesis": "pre-spike |skew| elevation (window 30)",
-  "stat": "pre=0.2139p vs base=0.2547p",
-  "n": 6,
+  "stat": "pre=0.2122p vs base=0.2480p",
+  "n": 15,
   "t": null,
-  "p": 0.7661169415292354,
+  "p": 0.8530734632683659,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:51"
+  "ts": "2026-07-05 21:32:40"
  },
  {
   "instrument": "JD75",
   "seed": 3,
   "hypothesis": "pre-spike spread widening (window 30)",
-  "stat": "pre=0.0070p vs base=-0.0001p",
-  "n": 8,
+  "stat": "pre=0.0045p vs base=-0.0000p",
+  "n": 15,
   "t": null,
-  "p": 0.7801099450274862,
+  "p": 0.8050974512743628,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:51"
+  "ts": "2026-07-05 21:32:41"
  },
  {
   "instrument": "JD75",
   "seed": 3,
   "hypothesis": "pre-spike |skew| elevation (window 30)",
-  "stat": "pre=0.2250p vs base=0.2247p",
-  "n": 8,
+  "stat": "pre=0.2356p vs base=0.2078p",
+  "n": 15,
   "t": null,
-  "p": 0.48875562218890556,
+  "p": 0.191904047976012,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:51"
+  "ts": "2026-07-05 21:32:41"
  },
  {
   "instrument": "JD100",
   "seed": 3,
   "hypothesis": "pre-spike spread widening (window 30)",
-  "stat": "pre=0.0202p vs base=0.0000p",
-  "n": 8,
+  "stat": "pre=0.0110p vs base=0.0000p",
+  "n": 13,
   "t": null,
-  "p": 0.11544227886056972,
+  "p": 0.3963018490754623,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:51"
+  "ts": "2026-07-05 21:32:41"
  },
  {
   "instrument": "JD100",
   "seed": 3,
   "hypothesis": "pre-spike |skew| elevation (window 30)",
-  "stat": "pre=0.0104p vs base=0.0212p",
-  "n": 8,
+  "stat": "pre=0.0308p vs base=0.0375p",
+  "n": 13,
   "t": null,
-  "p": 0.9155422288855573,
+  "p": 0.7631184407796102,
   "note": "block permutation, 2000 draws",
-  "ts": "2026-07-05 18:29:51"
+  "ts": "2026-07-05 21:32:41"
+ },
+ {
+  "instrument": "RDBULL/RDBEAR",
+  "seed": 3,
+  "hypothesis": "reset-tick snipe: 1-tick contracts settling on the deterministic 00:00 reset tick",
+  "stat": "ALL buys rejected: 'Trading is not available from 23:54:59 to 23:59:59' at :54/:56; 'Invalid expiry time' at :58. 12/12 rejections across both symbols and both contract types",
+  "n": 12,
+  "t": null,
+  "p": 1.0,
+  "note": "2026-07-06 00:00 GMT live demo test; outcome A (hypothesis dead) from reset_snipe.py docstring",
+  "ts": "2026-07-06 00:05:00"
  }
 ]
