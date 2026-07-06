@@ -129,3 +129,53 @@ on public quotes), so its EV gate is now honest.
 - Deriv ever offering lattice-settled contracts on Crash/Boom → instant +20%
   edge from the calm-phase tables. Watch `contracts_for` occasionally.
 - JD100 spot decaying below ~245 → sentinel_v2 regime reopens.
+
+## SESSION 2 FINAL — holdout verdicts (2026-07-06 18:30 UTC)
+
+Pre-registered protocol in `holdout_tests.py`, evaluated ONCE on session-2 data
+(epoch ≥ 1783320000, fully disjoint from every tick that generated the
+hypotheses). Results in `results/holdout_tests.json`:
+
+- **H1 — the JD100 sub-pip leak: CONFIRMED.** slope(step_{t+1} ~ skew_t) =
+  **+0.847 ± 0.125** on n=33,543 fresh ticks (t vs 0 = 6.75, one-sided
+  p = 7.4×10⁻¹²; consistent with the leak-model target of +1, t vs 1 = −1.22).
+  The bid/ask band genuinely reports the half-pip position of Deriv's internal
+  higher-precision spot. This is the bid/ask lens's one true positive, now
+  confirmed in-sample AND out-of-sample. Monetization: none through digit
+  contracts (a 0.5-pip center shift at σ≈4.3p moves digit probabilities <1pp,
+  and executable payouts eat far more than that).
+- **H2 — parity-at-halfpip: DEAD.** Holdout success rate 49.70% on n=7,423
+  half-pip ticks (p=0.70). The in-sample 52.1% (p=0.013) was a false
+  discovery — exactly the failure mode the holdout requirement exists to catch.
+
+### Seed 3 final (700 spike events, 9 instruments)
+Pre-spike spread residual and |skew| elevation: all flat except one nominal
+hit, BOOM1000 pre-spike |skew| (pooled p=0.004, which sneaks under the rank-5
+BH threshold 0.0045). Split-sample: direction and magnitude replicate
+(s1 +0.0395p / s2 +0.0366p elevation on ~0.3p base) but s2 alone is p=0.11 at
+25 events. **Verdict: suggestive, unconfirmed, unmonetizable** (Boom offers
+only multipliers, which price the spike). It stays flagged for a dedicated
+pre-registered test if anyone ever cares; it is not a believed finding.
+
+### Final ledger
+68 tests logged across 16 instruments and two sessions. Believed positives:
+1. The deterministic band structure of bid/ask (Seed 1, fully characterized).
+2. The JD100 sub-pip leak, holdout-confirmed (H1). Scientifically real,
+   economically nil.
+3. Crash/Boom calm-phase conditional digit structure (+23.4%/+6.7% at PUBLIC
+   payouts — but no digit contracts exist there, and executable payouts would
+   cut it to ~+13%/−2% anyway).
+4. The execution-pricing discovery: public payout quotes overstate executable
+   payouts by ~9–11% of stake; JD100 digit trading has no executable edge.
+
+Everything else — spread↔sigma coupling, pre-spike telegraphing, parity,
+duty-cycle tradeoffs, Range Break, reset-tick snipes — is null or dead, each
+with its cause of death documented in the ledger.
+
+## Program epitaph
+
+The bid/ask lens opened one genuinely new channel (the sub-pip leak), killed
+one live trading program that looked profitable under mispriced payouts, and
+closed every other door with evidence. The synthetic-index generator does not
+telegraph. The quotes are cosmetic. The house edge is bigger than it looks
+from the public socket. That is a complete answer to the brief.
