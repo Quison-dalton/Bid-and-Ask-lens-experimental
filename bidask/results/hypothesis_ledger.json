@@ -691,5 +691,27 @@
   "p": 0.07186063822585162,
   "note": "EXPLORATORY, needs holdout; antisymmetric pattern consistent with half-pip-shifted PMF",
   "ts": "2026-07-06 03:10:44"
+ },
+ {
+  "instrument": "JD100",
+  "seed": 0,
+  "hypothesis": "EXECUTION: authenticated payouts equal public payout quotes",
+  "stat": "REJECTED structurally: auth 2.22 vs public 2.43 (DIGITOVER5/UNDER4); 1.82 vs 1.95 (EVEN/ODD); 6.67 vs 8.93 (MATCH); house edge ~9-11pc vs ~2.5-3pc; identical across app_ids, linear in stake",
+  "n": 40,
+  "t": NaN,
+  "p": NaN,
+  "note": "Consequence: breakeven p for the 4-digit contracts is 0.4505 > best empirical table p ~0.43 -> NO executable positive-EV digit trade on JD100 through this account. Public-socket payouts are not executable.",
+  "ts": "2026-07-06 13:29:36"
+ },
+ {
+  "instrument": "JD100",
+  "seed": 0,
+  "hypothesis": "LIVE: sentinel_v2 realized PnL consistent with model p at EXECUTABLE payout (2.22), not the public payout (2.4265) used in its EV gate",
+  "stat": "709 trades (s1: 39, +3.18; s2: 670, -35.08), realized win rate 305/709=0.4302 vs model p 0.4165 (z=+0.74, model calibrated); realized EV -4.5pc/trade == p*2.22-1",
+  "n": 709,
+  "t": 0.74,
+  "p": 0.4592999943295813,
+  "note": "The digit MODEL is calibrated (realized>=model p); the stale/public payout probe overstated EV by ~8.6pc of stake. sentinel_v2 patched to probe authenticated payouts; with honest payouts best EV at sigma 4.30 is -4.74pc -> gate never opens.",
+  "ts": "2026-07-06 13:29:36"
  }
 ]

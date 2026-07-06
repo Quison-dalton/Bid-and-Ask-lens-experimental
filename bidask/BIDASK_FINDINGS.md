@@ -90,6 +90,39 @@ Running on demo DOT92587183 with empirical tables, gate 1%, $1 stakes,
 the physics gate doing its job: the edge deepens as spot decays, and today spot
 is moving the wrong way. Balance $10,000.61, 0 trades, 0 losses.
 
+## SESSION 2 (2026-07-06) — the execution-pricing discovery
+
+The regime opened in session 2 (spot decayed 254.7→248, σ≈4.1–4.3) and the
+sentinel fired 670 trades… at −$35.08 (42.7% wins vs 45.0% breakeven). Root
+cause found and proven live:
+
+**The public tick socket's payout quotes are NOT executable.** The same
+contract (DIGITOVER 5, JD100, 1t, $1) quotes payout 2.43 on the public socket
+but 2.22 on the authenticated one — and settles at 2.22 (verified on real
+settled contracts). Identical across app_ids, linear in stake. Executable
+house edge is ~9–11% per digit contract vs the ~2.5–3% the public quotes
+imply (DIGITEVEN/ODD 1.82 vs 1.95, DIGITMATCH 6.67 vs 8.93).
+
+Consequences, all verified:
+- sentinel_v2 probed payouts on the public socket → every "+1.08% EV" trade
+  had **true EV ≈ −7.5%** at model p, ≈ −4.6% at realized p. Realized:
+  709 trades across both sessions, −$31.90 ≈ −4.5%/trade. Exactly the
+  executable payout at the model's win rate.
+- **The digit MODEL itself is calibrated**: realized win rate 43.0% ± 1.9 vs
+  model p 41.65% (z=+0.74). The science holds; the payout kills the economics.
+- Breakeven p for the 4-digit contracts at payout 2.22 is **0.4505**, above
+  the best empirical-table p (~0.43). **No executable positive-EV digit trade
+  exists on JD100 through this account.** Patched sentinel (authenticated
+  payout probe) confirms live: best EV at σ=4.30 with regime open = −4.74%,
+  gate never opens. Session-1's +$3.18 on 39 trades was small-n luck.
+- The parity-at-halfpip candidate (H2) needs p_win ≥ 0.5495 at executable
+  DIGITEVEN/ODD payout 1.82; the in-sample effect is 53.0% on its best side →
+  **untradeable through this account even if it survives holdout.**
+
+`fable-thoughts/tools/sentinel_v2.py` is patched in this branch to probe
+payouts on the authenticated connection when trading (and to refuse to trade
+on public quotes), so its EV gate is now honest.
+
 ## What would change these conclusions
 - Bid/ask from a different feed (e.g. the trading WS or contract pricing)
   showing non-cosmetic behavior — the public tick feed is what was tested.

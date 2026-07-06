@@ -85,18 +85,30 @@ def main():
     print(f"empirical tables: {len(tables)} sigma bins" if tables else "NO tables -> wrapped-normal only")
 
     ctl = DerivWS(token="")
+    # CRITICAL (found live 2026-07-06): the public socket quotes payouts ~9-11%
+    # better than what an authenticated buy actually settles at (e.g. DIGITOVER5
+    # public 2.43 vs executable 2.22). EV must be computed from AUTHENTICATED
+    # payouts or every trade's edge is overstated by the difference.
+    probe = ctl
+    if a.trade:
+        try:
+            probe = DerivWS()
+        except Exception as e:
+            print(f"WARNING: authenticated payout probe failed ({e}); public payouts"
+                  " OVERSTATE executable EV — refusing to trade on them")
+            a.trade = False
     payouts, pips = {}, {}
     for sym in a.watch:
         h = ctl.ticks_history(sym, count=W + 2)
         pips[sym] = int(h["pip_size"])
         payouts[sym] = {}
         for t, b in CONTRACTS:
-            req = dict(amount=10, basis="stake", contract_type=t, currency="USD",
+            req = dict(amount=a.stake, basis="stake", contract_type=t, currency="USD",
                        duration=1, duration_unit="t", underlying_symbol=sym)
             if b is not None: req["barrier"] = str(b)
-            r = ctl.proposal(**req)
+            r = probe.proposal(**req)
             if "proposal" in r:
-                payouts[sym][(t, b)] = float(r["proposal"]["payout"]) / 10
+                payouts[sym][(t, b)] = float(r["proposal"]["payout"]) / a.stake
             time.sleep(0.08)
         print(f"{sym}: {len(payouts[sym])} payouts; pip={pips[sym]}")
 
