@@ -1,0 +1,54 @@
+{"ev": "start", "account": "DOT92587183", "cycles": 8, "ts": 1783422534.0067277}
+{"ev": "probe", "phase": "baseline", "surface": {"DIGITOVER:5": 2.22, "DIGITUNDER:4": 2.22, "DIGITEVEN:None": 1.82, "DIGITODD:None": 1.82, "DIGITMATCH:0": 6.67, "DIGITDIFF:0": 1.05}, "balance": 10000, "ts": 1783422535.2444496}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 0, "cid": 4516208299, "buy": 1.0, "payout_q": 1.05, "profit": -1.0, "ts": 1783422538.6517975}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 1, "cid": 4516214919, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422540.9653587}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 2, "cid": 4516218699, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422543.405654}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 3, "cid": 4516222399, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422546.7541122}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 4, "cid": 4516227939, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422549.0810878}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 5, "cid": 4516231919, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422551.438396}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 6, "cid": 4516235279, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422553.8490124}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 7, "cid": 4516238579, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422556.1572425}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 8, "cid": 4516241939, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422558.5831099}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 9, "cid": 4516246519, "buy": 1.0, "payout_q": 1.05, "profit": -1.0, "ts": 1783422561.4849288}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 10, "cid": 4516258379, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422564.0058877}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 11, "cid": 4516261599, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422566.3607395}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 12, "cid": 4516264799, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422568.6457756}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 13, "cid": 4516269099, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422570.927111}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 14, "cid": 4516272799, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422573.3919156}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 15, "cid": 4516276279, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422575.6591182}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 16, "cid": 4516280059, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422577.9494457}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 17, "cid": 4516283419, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422580.3390584}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 18, "cid": 4516286679, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422582.723818}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 19, "cid": 4516291719, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422586.0794237}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 20, "cid": 4516297039, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422588.455106}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 21, "cid": 4516301439, "buy": 1.0, "payout_q": 1.05, "profit": -1.0, "ts": 1783422590.8151588}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 22, "cid": 4516304899, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422593.1015356}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 23, "cid": 4516308019, "buy": 1.0, "payout_q": 1.05, "profit": -1.0, "ts": 1783422596.5137053}
+{"ev": "trade", "arm": "DIGITDIFF:0", "i": 24, "cid": 4516314159, "buy": 1.0, "payout_q": 1.05, "profit": 0.05, "ts": 1783422598.8361542}
+{"ev": "probe", "phase": "cycle0_HIGHWIN", "wins": 21, "losses": 4, "pnl": -2.9499999999999993, "surface": {"DIGITOVER:5": 2.22, "DIGITUNDER:4": 2.22, "DIGITEVEN:None": 1.82, "DIGITODD:None": 1.82, "DIGITMATCH:0": 6.67, "DIGITDIFF:0": 1.05}, "balance": 9997.05, "ts": 1783422599.8448255}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 0, "cid": 4516320439, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422602.1403224}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 1, "cid": 4516323959, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422604.6435049}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 2, "cid": 4516328339, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422606.9392307}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 3, "cid": 4516331779, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422609.310745}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 4, "cid": 4516335039, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422612.7819712}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 5, "cid": 4516340779, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422615.10156}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 6, "cid": 4516343519, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422617.4898086}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 7, "cid": 4516346739, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422619.8100708}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 8, "cid": 4516352239, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422622.1106603}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 9, "cid": 4516355479, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422625.5107381}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 10, "cid": 4516360199, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422627.799087}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 11, "cid": 4516363479, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422630.0883446}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 12, "cid": 4516367419, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422633.585177}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 13, "cid": 4516372679, "buy": 1.0, "payout_q": 6.67, "profit": 5.67, "ts": 1783422636.0821366}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 14, "cid": 4516375939, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422639.659079}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 15, "cid": 4516383659, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422642.0814548}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 16, "cid": 4516387219, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422645.5696926}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 17, "cid": 4516392979, "buy": 1.0, "payout_q": 6.67, "profit": 5.67, "ts": 1783422647.8535}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 18, "cid": 4516396899, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422650.1135457}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 19, "cid": 4516400279, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422653.6374824}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 20, "cid": 4516406539, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422655.9044583}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 21, "cid": 4516410539, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422658.3318102}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 22, "cid": 4516414919, "buy": 1.0, "payout_q": 6.67, "profit": 5.67, "ts": 1783422661.772254}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 23, "cid": 4516421779, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422664.102714}
+{"ev": "trade", "arm": "DIGITMATCH:0", "i": 24, "cid": 4516425859, "buy": 1.0, "payout_q": 6.67, "profit": -1.0, "ts": 1783422665.4402506}
+{"ev": "probe", "phase": "cycle0_LOWWIN", "wins": 3, "losses": 22, "pnl": -4.99, "surface": {"DIGITOVER:5": 2.22, "DIGITUNDER:4": 2.22, "DIGITEVEN:None": 1.82, "DIGITODD:None": 1.82, "DIGITMATCH:0": 6.67, "DIGITDIFF:0": 1.05}, "balance": 9992.06, "ts": 1783422666.4768298}
