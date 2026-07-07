@@ -746,5 +746,49 @@
   "p": NaN,
   "note": "Squeaks under BH-FDR (p=0.004 vs rank-5 threshold 0.0045) but has NO holdout confirmation of its own; amplitude +0.04p on 0.3p base; no monetization path (Boom offers only multipliers, which price spike risk). VERDICT: suggestive, unconfirmed \u2014 do not believe without a dedicated pre-registered fresh-sample test.",
   "ts": "2026-07-06 18:35:14"
+ },
+ {
+  "instrument": "JD100",
+  "seed": "P2",
+  "hypothesis": "PAYOUT SURFACE RE-VERIFICATION: any of 40 digit contracts clears executable breakeven at best table p",
+  "stat": "0/40 positive; best DIGITOVER:3 EV=-2.97% at (bin40,d7); auth surface identical to session 2 (2.22/1.82/6.67) -> stable static haircut",
+  "n": 40,
+  "t": null,
+  "p": null,
+  "note": "structural/deterministic; no p-value. The Section-5 base-model answer: NO executable edge exists.",
+  "ts": "2026-07-07 13:04:55"
+ },
+ {
+  "instrument": "JD100",
+  "seed": "P2",
+  "hypothesis": "AXIS A: LCB-Kelly contextual bandit vs fixed/fixed-Kelly baselines, walk-forward 74.8k ticks",
+  "stat": "P0 public-priced fixed: -$605.44/6333tr (-9.56%/$); P1 half-Kelly public: -$72.30; P2 honest static: 0tr; P3 bandit@exec: 0tr; P4 bandit@public-belief: -$2.52/8tr (posterior rescues 99.6% of P0 loss)",
+  "n": 74833,
+  "t": null,
+  "p": null,
+  "note": "deterministic replay at executable settlement; synthetic edge-injection PASS (100% stake concentration on true-positive arm, +$146 vs -$5435 fixed)",
+  "ts": "2026-07-07 13:04:55"
+ },
+ {
+  "instrument": "JD100",
+  "seed": "P2",
+  "hypothesis": "AXIS C: ML residual layer improves table baseline (walk-forward, 1800-tick purge)",
+  "stat": "log-loss WORSE on 5/5 folds (base 2.3022 vs comb 2.3029-2.309); incremental EV negative both surfaces (231 spurious exec trades -$69 vs 0)",
+  "n": 74775,
+  "t": null,
+  "p": 0.0625,
+  "note": "sign-test two-sided p on 0/5 folds improving; REJECTED - no structure beyond table in corpus, corrections are noise",
+  "ts": "2026-07-07 13:04:55"
+ },
+ {
+  "instrument": "JD100",
+  "seed": "P2",
+  "hypothesis": "AXIS B: executable payouts respond to account trading history (adverse/responsive pricing)",
+  "stat": "17 authenticated probes x 6 contracts across 8 alternating win/loss blocks (200tr @89% wins, 200tr @8% wins, -$106.38 net): payout variance EXACTLY 0 on every contract",
+  "n": 400,
+  "t": null,
+  "p": null,
+  "note": "structural null - pricing static at $1 stakes/400 trades/single demo account scale. 2.22-vs-2.43 gap is static tier pricing, not reactive. Scope caveat: larger stakes/real accounts untested.",
+  "ts": "2026-07-07 13:04:55"
  }
 ]
