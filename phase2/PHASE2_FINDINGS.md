@@ -132,3 +132,12 @@ nil). **No new survivor. No false discovery admitted.**
   structure is sitting there, confirmed and idle).
 - JD100 spot decaying far enough that sigma drops materially below 4.0 — the
   tables' concentration (and p) rises as sigma falls.
+
+## Close-out refresh (end of session)
+- Axes A and C rerun on the grown corpus (88.9k ticks incl. ~14k fresh
+  session-3 ticks): identical verdicts. All new ticks sat above the sigma
+  gate (regime closed) — zero new trades for every policy; ML log-loss still
+  worse than baseline on the session-3-containing fold (2.30232 vs 2.30250).
+- Bracketing payout probe at session end: 2.22 / 1.82 / 6.67 — unchanged
+  start-to-end. Surface static across the entire session.
+- Demo balance reset to a clean $10,000.00 (verified).
